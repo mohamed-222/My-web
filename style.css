@@ -1,0 +1,449 @@
+/* Google Font CDN Link */
+@import url('https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Aref+Ruqaa:wght@700&family=Cairo:wght@300;400&family=Caveat:wght@600&family=La+Belle+Aurore&family=Marhey&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  scroll-behavior: smooth;
+  font-family: 'Amiri', serif;
+  font-family: 'Aref Ruqaa', serif;
+  font-family: 'Cairo', sans-serif;
+  font-family: 'Caveat', cursive;
+font-family: 'La Belle Aurore', cursive;
+font-family: 'Marhey', cursive;
+}
+
+/* Custom Scroll Bar CSS */
+::-webkit-scrollbar {
+    width: 10px;
+}
+::-webkit-scrollbar-track {
+    background: #474747;
+}
+::-webkit-scrollbar-thumb {
+    background: #000000;
+    border-radius: 12px;
+    transition: all 0.3s ease;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #000000;
+}
+/* navbar styling */
+nav{
+  position: fixed;
+  width: 100%;
+  padding: 20px 0;
+  z-index: 998;
+  transition: all 0.3s ease;
+  font-family: 'Ubuntu', sans-serif;
+}
+nav.sticky{
+  background: #fefae0;
+  padding: 13px 0;
+}
+nav .navbar{
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto;
+}
+nav .navbar .logo a{
+  font-weight: 500;
+  font-size: 35px;
+  color: #dda15e;
+}
+nav.sticky .navbar .logo a{
+  color: #dda15e;
+}
+nav .navbar .menu{
+  display: flex;
+  position: relative;
+}
+nav .navbar .menu li{
+  list-style: none;
+  margin: 0 8px;
+}
+.navbar .menu a{
+  font-size: 19px;
+  font-weight: 500;
+  color: #0E2431;
+  padding: 6px 0;
+  transition: all 0.1s ease;
+}
+.navbar .menu a:hover{
+  color: #576d0f;
+}
+nav.sticky .menu a{
+  color: #0E2431;
+}
+nav.sticky .menu a:hover{
+  color: #576d0f;
+}
+.navbar .media-icons a{
+  color: #0E2431;
+  font-size: 18px;
+  margin: 0 6px;
+}
+nav.sticky .media-icons a{
+  color: #FFF;
+}
+
+/* Side Navigation Menu Button CSS */
+nav .menu-btn,
+.navbar .menu .cancel-btn{
+  position: absolute;
+  color: rgb(207, 207, 207);
+  right: 30px;
+  top: 20px;
+  font-size: 20px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: none;
+}
+nav .menu-btn{
+  color: #000000;
+}
+nav.sticky .menu-btn{
+  color: #FFF;
+}
+.navbar .menu .menu-btn{
+  color: #fff;
+}
+
+/* home section styling */
+.home{
+  height: 87vh;
+  width: 100%;
+  background: white;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  font-family: 'Ubuntu', sans-serif;
+}
+.home .home-content{
+  width: 90%;
+  height: 100%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+padding-top: 100px;
+}
+.home .text-one{
+  font-size: 25px;
+  color: #0E2431;
+}
+.home .text-two{
+  color: #0E2431;
+  font-size: 75px;
+  font-weight: 600;
+  margin-left: -3px;
+}
+.home .text-three{
+  font-size: 40px;
+  margin: 5px 0;
+  color: #0E2431
+  ;
+}
+.home .text-four{
+  font-size: 23px;
+  margin: 5px 0;
+  color: #0E2431;
+}
+.home .button{
+  margin: 14px 0;
+}
+.home .button button{
+  outline: none;
+  padding: 8px 16px;
+  border-radius: 6px;
+  font-size: 25px;
+  font-weight: 400;
+  background: #576d0f;
+  color: #fff;
+  cursor: pointer;
+  border: 2px solid transparent;
+  transition: all 0.1s ease;
+}
+.home .button button:hover{
+  border-color: #ffffff;
+  background-color:  #576d0f;
+  ;
+  color: #ffffff;
+}
+/* Footer CSS */
+footer{
+  background: #000000;
+  padding: 15px 0;
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+}
+footer .text span{
+  font-size: 17px;
+  font-weight: 400;
+  color: #fff;
+}
+footer .text span a{
+  font-weight: 500;
+  color: #FFF;
+}
+footer .text span a:hover{
+  text-decoration: underline;
+}
+/* Scroll TO Top Button CSS */
+.scroll-button a{
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  color: #fff;
+  background: #000000;
+  padding: 7px 12px;;
+  font-size: 18px;
+  border-radius: 6px;
+  box-shadow: rgba(0, 0, 0, 0.15);
+  display: none;
+}
+
+/* Responsive Media Query */
+@media (max-width: 1190px) {
+  section .content{
+    width: 85%;
+  }
+}
+@media (max-width: 1000px) {
+  .about .about-details{
+    justify-content: center;
+    flex-direction: column;
+  }
+  .about .about-details .left{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+  .about-details .right{
+    width: 90%;
+    margin: 40px 0;
+  }
+  .services .boxes .box{
+    margin: 20px 0;
+    width: calc(100% / 2 - 20px);
+  }
+}
+@media (max-width: 900px) {
+  .about .left img{
+    height: 350px;
+    width: 350px;
+  }
+}
+
+@media (max-width: 750px) {
+  nav .navbar{
+    width: 90%;
+  }
+  nav .navbar .menu{
+    position: fixed;
+    left: -100%;
+    top: 0;
+    background: #0E2431;
+    height: 100vh;
+    max-width: 400px;
+    width: 100%;
+    padding-top: 60px;
+    flex-direction: column;
+    align-items: center;
+    transition: all 0.5s ease;
+  }
+  .navbar.active .menu{
+    left: 0;
+  }
+  nav .navbar .menu a{
+    font-size: 23px;
+    display: block;
+    color: #fff;
+    margin: 10px 0;
+  }
+  nav.sticky .menu a:hover{
+    color: #4070f4;
+  }
+  nav .navbar .media-icons{
+    display: none;
+  }
+  nav .menu-btn,
+  .navbar .menu .cancel-btn{
+    display: block;
+  }
+  .home .text-two{
+    font-size: 65px;
+  }
+  .home .text-three{
+    font-size: 35px;
+  
+  }
+  .skills .skills-details{
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .skills-details .text{
+    width: 100%;
+    margin-bottom: 50px;
+  }
+  .skills-details .boxes{
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  .services .boxes .box{
+    margin: 20px 0;
+    width: 100%;
+  }
+  .contact .text{
+    width: 100%;
+}
+}
+
+@media (max-width: 500px){
+  .home .text-two{
+    font-size: 55px;
+  }
+  .home .text-three{
+    font-size: 33px;
+  }
+  .skills-details .boxes .per{
+    font-size: 50px;
+    color: #000000;
+  }
+}
+
+
+p{
+  font-size: 25px;
+}
+
+::selection{
+  
+  background: rgba(0, 0, 0, 0.906)
+}
+
+
+.about{
+  background: #dda15e;
+  height: 89vh;
+  width: 100%;
+  background-position: center;
+  background-attachment: fixed;
+  font-family: 'Ubuntu', sans-serif;
+  padding-left: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  
+}
+
+.text2{
+font-size: 30px;
+color: white;
+text-align: center;
+
+}
+
+
+
+.text1{
+  font-size: 50px;
+color: #0E2431;
+}
+
+
+.about-content{
+
+  font-size: 30px;
+  color: #0E2431;
+}
+
+.about2{
+  font-size: 25px;
+  color: #0E2431;
+  
+
+}
+
+.skills{
+
+background: #ffffff;
+height: 55vh;
+width: 100%;
+background-position: center;
+background-attachment: fixed;
+font-family: 'Ubuntu', sans-serif;
+padding-left: 10px;
+display: flex;
+flex-direction: column;
+justify-content: center;
+}
+
+.card1{
+  border-radius: 10px;
+  background: #0E2431;
+  width: 140px;
+  height: 120px;
+  text-align: center;
+  font-size: 25px;
+  color: #ffffff;
+}
+
+
+.card6{
+  border-radius: 10px;
+  background: #0E2431;
+  width: 140px;
+  height: 120px;
+  text-align: center;
+  font-size: 25px;
+  color: #ffffff;
+  
+}
+
+
+.card3{
+  border-radius: 10px;
+  background: #0E2431;
+  width: 140px;
+  height: 120px;
+  text-align: center;
+  font-size: 22px;
+  color:  #ffffff;
+  ;
+  
+  
+}
+
+.card4{ 
+  border-radius: 10px;
+  background: #0E2431;
+  width: 140px;
+  height: 120px;
+  text-align: center;
+  font-size: 22px;
+  color: #ffffff;
+}
+
+
+  
+.cards{
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.skills-title{
+  font-size: 30px;
+  color: #0E2431;
+  text-align: center;
+ 
+
+
+  
+}
